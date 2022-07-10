@@ -91,7 +91,7 @@ python -m "templates" --directory ./"Testing" --language py --name "TestLib" --r
 
 ### Adding/Editing the Standard Templates
 
-* Step 1:
+* Syntax:
 
 ```json
 "{language}": {
@@ -103,10 +103,10 @@ python -m "templates" --directory ./"Testing" --language py --name "TestLib" --r
 
 Where:
 
-    - `language`    = is linked to the --language flag.
-    - `directory`   = the name of the target directory to create.
-    - `destination` = the name if the file to be created.
-    - `template`    = the template in 'templates' directory with the
+- `language`    = is linked to the --language flag.
+- `directory`   = the name of the target directory to create.
+- `destination` = the name if the file to be created.
+- `template`    = the template in 'templates' directory with the
                       content to copy into `destination`.
 
 * Step 2:
