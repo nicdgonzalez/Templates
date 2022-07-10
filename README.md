@@ -103,11 +103,11 @@ python -m "templates" --directory ./"Testing" --language py --name "TestLib" --r
 
 Where:
 
-- `language`    = is linked to the --language flag.
+- `language`    = is linked to the `--language` flag.
 - `directory`   = the name of the target directory to create.
 - `destination` = the name if the file to be created.
 - `template`    = the template in 'templates' directory with the
-                      content to copy into `destination`.
+                  content to copy into `destination`.
 
 * Step 2:
 
