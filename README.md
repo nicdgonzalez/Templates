@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Templates</h1>
-    <img src="./templates/images/py.png" alt="template_banner" />
+    <img src="./templates/templates/images/py.png" alt="template_banner" />
 </div>
 
 ## Table of Contents
@@ -62,39 +62,52 @@ Getting started...
   To install the project, run:
 
 ```powershell
-# This should automatically put the library into PYTHONPATH.
-# This way it can be called by name (templates) instead of by absolute path.
+# This should automatically insert the package into PYTHONPATH.
+# This way it can be called by name (templates).
 > pip install "."
 ```
 
-* Now for demonstration purposes, we will create a dummy project using
-  one of the templates I created:
+* Now for demonstration purposes, lets create a dummy project using
+  one of the standard templates:
 
 ```powershell
-# Go to a different directory (to showcase that this works from anywhere):
-cd ../../
+# Move to a different directory:
+cd ../
 
 # Make a new directory named 'Testing':
 mkdir "Testing"
 
-# Run 'templates' to set up a new Python project named 'TestLib' in 'Testing':
-python -m "templates" --directory ./"Testing" --language py --name "TestLib" --repository "https://github.com/nicdgonzalez/TemplatesExample"
+# Set up a new Python project named 'TestLib' in 'Testing':
+# This command can also be written using the shorthand flag names:
+# python -m "templates" -d <directory> -l <language> -n <name> -r <link>
+python -m "templates" --directory ./"Testing" --language py --name "TestLib" --repository "https://github.com/nicdgonzalez/Templates"
 ```
 
 > **Note**
-> Run `python -m "templates" -h` to open the help menu and see all of the
-> available arguments/flags.
+> Run `python -m "templates" --help` to open the help menu and see all of the
+> available argument/flag options.
 
 ## Usage
-
-Provide use cases and real world code examples here.
 
 ### Adding/Editing the Standard Templates
 
 * Step 1:
 
+```json
+"{language}": {
+    "/{directory}": {
+        "files": ["{destination}::{template}"]
+    }
+}
 ```
-```
+
+Where:
+
+    - `language`    = is linked to the --language flag.
+    - `directory`   = the name of the target directory to create.
+    - `destination` = the name if the file to be created.
+    - `template`    = the template in 'templates' directory with the
+                      content to copy into `destination`.
 
 * Step 2:
 
