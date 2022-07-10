@@ -1,0 +1,23 @@
+# .gitignore file
+
+# General
+_*
+*config*
+!*.template.*
+
+# C/C++
+*.exe
+*.out
+
+# Java
+*.class
+
+# C#/.NET
+
+# Python
+!__init__.py
+!__main__.py
+*.egg-info
+
+# Visual Studio Code
+.vscode

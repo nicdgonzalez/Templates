@@ -1,0 +1,43 @@
+{
+    "$id": "/schemas/argument",
+    "$schema": "http://json-schema.org/schema",
+    "title": "Argument",
+    "description": "Represents a command line argument (e.g., -h, --help).",
+    "type": "object",
+    "properties": {
+        "": {
+            "description": "List of names/flags (e.g., help, -h, --help).",
+            "type": ["array", "string"]
+        },
+        "action": {
+            "type": ["null", "string"]
+        },
+        "nargs": {
+            "description": "The number of arguments this name/flag takes.",
+            "type": ["null", "number"]
+        },
+        "const": {
+            "type": ["null", "string"]
+        },
+        "default": {
+            "type": ["null", "boolean", "object", "array", "number", "string"]
+        },
+        "choices": {
+            "type": ["null", "array"]
+        },
+        "required": {
+            "type": ["null", "boolean"]
+        },
+        "help": {
+            "type": ["null", "string"]
+        },
+        "metavar": {
+            "type": ["null", "array", "string"]
+        },
+        "dest": {
+            "type": ["null", "string"]
+        }
+    },
+    "required": [""],
+    "$comment": "An additional property available is `type`. It isn't defined in #properties because it can be ANY Python object."
+}

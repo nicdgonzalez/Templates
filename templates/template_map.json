@@ -1,0 +1,75 @@
+{
+    "all": {
+        "/examples": {
+            "files": []
+        },
+        "/static": {
+            "/images": {
+                "files": [
+                    "banner.png::images/{language}.png"
+                ]
+            }
+        },
+        "/tests": {
+            "files": []
+        },
+        "/{project}": {
+            "files": []
+        },
+        "": {
+            "files": [
+                "README.md::README.md",
+                ".gitignore::.gitignore"
+            ]
+        }
+    },
+    "c": {
+        "/include": {
+            "{project}": {
+                "files": []
+            }
+        },
+        "/{project}": {
+            "files": []
+        },
+        "": {
+            "files": []
+        }
+    },
+    "cpp": {
+        "/include": {
+            "/{project}": {
+                "files": [
+                    "core.hh::cpp/core.hh",
+                    "{project}.hh::cpp/header.hh"
+                ]
+            },
+            "files": []
+        },
+        "/{project}": {
+            "files": [
+                "{project}.cc::cpp/source.cc"
+            ]
+        },
+        "": {
+            "files": []
+        }
+    },
+    "java": {},
+    "js": {},
+    "py": {
+        "/{project}": {
+            "files": [
+                "__init__.py::py/__init__.py"
+            ]
+        },
+        "": {
+            "files": [
+                "pypi_classifiers.txt::py/pypi_classifiers.txt",
+                "requirements.txt::py/requirements.txt",
+                "setup.cfg::py/setup.cfg",
+                "setup.py::py/setup.py"
+            ]
+        }
+    }
+}

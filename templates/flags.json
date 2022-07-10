@@ -1,0 +1,64 @@
+{
+    "empty_flag": {
+        "": [],
+        "action": null,
+        "nargs": null,
+        "const": null,
+        "default": null,
+        "choices": null,
+        "required": null,
+        "help": null,
+        "metavar": null,
+        "dest": null
+    },
+    "flags": [
+        {
+            "": ["-d", "--directory"],
+            "action": null,
+            "nargs": null,
+            "const": null,
+            "default": null,
+            "choices": null,
+            "required": true,
+            "help": "An empty directory to fill with a template.",
+            "metavar": null,
+            "dest": "directory"
+        },
+        {
+            "": ["-l", "--language"],
+            "action": null,
+            "nargs": null,
+            "const": null,
+            "default": "null",
+            "choices": ["null", "c", "cpp", "java", "js", "py"],
+            "required": true,
+            "help": "The programming language the new project will use.",
+            "metavar": null,
+            "dest": "language"
+        },
+        {
+            "": ["-n", "--name"],
+            "action": null,
+            "nargs": null,
+            "const": null,
+            "default": "<PROJECT>",
+            "choices": null,
+            "required": true,
+            "help": "The project name to use when autofilling template content. The name must start with an alphabetical character. Alphanumericals and underscores are allowed.",
+            "metavar": null,
+            "dest": "name"
+        },
+        {
+            "": ["-r", "--repository"],
+            "action": null,
+            "nargs": null,
+            "const": null,
+            "default": null,
+            "choices": null,
+            "required": false,
+            "help": "A link to the project's git repository.",
+            "metavar": null,
+            "dest": "repository"
+        }
+    ]
+}
