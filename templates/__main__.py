@@ -92,6 +92,9 @@ def read_template_map(template_map: Dict[str, Any]) -> None:
             read_template_map(dir_content)
             # TODO: All directories should eventually be created whether
             # there is a default file in it or not.
+
+            # Move all code block from `for f in files` to here and
+            # create dirs from here.
         elif (isinstance(dir_content, list)):
             for (file_map) in dir_content:
                 d, s = file_map.split("::", maxsplit=1)
@@ -137,6 +140,8 @@ for (target, template) in files:
         if not exists(buffer):
             mkdir(buffer)
 
+    # try except else block instead of if png
+
     if (target.rsplit(".", maxsplit=1)[1]) in ("png", "jpeg", "gif"):
         copy(template, target)
     else:
@@ -152,4 +157,6 @@ for (target, template) in files:
 
         with open(target, 'w+') as f:
             f.write(template_content)
+
+    # Also make a fallback to atleast copy the files if it can't format it
 # END_FILES
