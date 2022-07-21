@@ -35,7 +35,26 @@ the template.
 
 ## Project Status
 
-This project is currently *in development*.
+This project is currently *~in development~ inactive*.
+It works, but it has some bugs.
+
+If you want to continue using this project anyway, here are the known bugs:
+I'll update this README when I get around to fixing them:
+
+* When running the project from a different directory, sometimes it works.
+  For some reason, python can't find the json files unless you're running
+  it from the original repository directory, which kinda defeats the whole
+  "being runnable from anywhere" motto.
+  
+* Directories in the template_map.json file don't get created when they
+  don't have any files in them. can probably be fixed by refactoring the
+  code a little bit but again ill update when i get around to it.
+  
+I eventually want this up and running perfectly but for now just take note
+of the bugs and it should still work fine.
+
+I might create a runnable version with a hardcoded url you can post so that
+you dont HAVE to do it all from the command line. We'll see. ;)
 
 ## Version Naming
 
