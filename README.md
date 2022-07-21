@@ -30,7 +30,7 @@ the template.
 
 ## Technologies Used
 
-* Windows OS (x64)
+* Windows 10 x64
 * Python 3.10.5
 
 ## Project Status
@@ -108,14 +108,6 @@ Where:
 - `destination` = the name if the file to be created.
 - `template`    = the template in 'templates' directory with the
                   content to copy into `destination`.
-
-* Step 2:
-
-```
-```
-
-> **Warning**
-> A warning message.
 
 ### Adding/Editing Argument Flags
 
