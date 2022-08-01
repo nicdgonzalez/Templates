@@ -39,5 +39,5 @@
         }
     },
     "required": [""],
-    "$comment": "An additional property available is `type`. It isn't defined in #properties because it can be ANY Python object."
+    "$comment": "An additional property available is `type`. It isn't defined in #properties because Python object can't be defined here."
 }
